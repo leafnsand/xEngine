@@ -1,0 +1,7 @@
+fips_begin_module(Level)
+    fips_vs_warning_level(3)
+    fips_vs_disable_warnings(4267 4996)
+    fips_include_directories(.)
+    fips_src(. GROUP_FOLDERS)
+    fips_deps(AzCore)
+fips_end_module()

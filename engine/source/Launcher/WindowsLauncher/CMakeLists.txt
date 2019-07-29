@@ -1,0 +1,6 @@
+fips_begin_app(WindowsLauncher windowed)
+    fips_src(. GROUP_FOLDERS)
+    fips_resources(${FIPS_PROJECT_DIR}/work/assets)
+    fips_deps(LauncherBase)
+    point_proj(NAME TestProject)
+fips_end_app()

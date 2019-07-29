@@ -1,0 +1,6 @@
+fips_begin_app(MacLauncher windowed)
+    fips_src(. GROUP_FOLDERS)
+    fips_resources(Images.xcassets)
+    fips_resources(${FIPS_PROJECT_DIR}/work/assets)
+    fips_deps(LauncherBase)
+fips_end_app()

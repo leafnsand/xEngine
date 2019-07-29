@@ -1,0 +1,5 @@
+fips_begin_module(Particle2d)
+    fips_include_directories(.)
+    fips_src(. GROUP_FOLDERS)
+    fips_deps(AzCore Renderer)
+fips_end_module()

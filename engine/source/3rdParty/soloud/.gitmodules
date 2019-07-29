@@ -1,0 +1,3 @@
+[submodule "ext/libmodplug"]
+	path = ext/libmodplug
+	url = http://version.uuzu.com/N3H5/libmodplug.git
