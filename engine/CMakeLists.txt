@@ -11,8 +11,8 @@ include_directories(
 
 add_subdirectory(source/AzCore)
 
-#add_subdirectory(source/Launcher)
+add_subdirectory(source/Launcher)
 
 #add_subdirectory(source/Module)
 
-#add_subdirectory(source/3rdParty)
+add_subdirectory(source/3rdParty)

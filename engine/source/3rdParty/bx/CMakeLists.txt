@@ -1,11 +1,9 @@
-fips_begin_lib(bx)
-    if (CMAKE_BUILD_TYPE MATCHES "Debug")
-        add_definitions("-DBX_CONFIG_DEBUG=1")
-    endif()
-    fips_include_directories(3rdparty)
-    fips_src(include GROUP_FOLDERS)
-    fips_src(src GROUP_FOLDERS)
-    if (FIPS_LINUX)
-        fips_deps(dl)
-    endif()
-fips_end_lib()
+file(GLOB_RECURSE source_files src *.*)
+
+add_library(bx ${source_files})
+
+target_include_directories(bx PRIVATE 3rdparty)
+
+if (CMAKE_BUILD_TYPE MATCHES "Debug")
+    target_compile_definitions(bx PRIVATE -DBX_CONFIG_DEBUG=1)
+endif()

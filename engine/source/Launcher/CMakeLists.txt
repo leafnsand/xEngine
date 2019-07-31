@@ -1,6 +1,6 @@
 add_subdirectory(LauncherBase)
-if(FIPS_WINDOWS)
-    add_subdirectory(AssetServer)
+if(WIN32)
+    #add_subdirectory(AssetServer)
     add_subdirectory(WindowsLauncher)
 elseif(FIPS_IOS)
     add_subdirectory(IOSLauncher)

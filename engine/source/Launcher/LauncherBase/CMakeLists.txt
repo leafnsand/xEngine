@@ -1,4 +1,5 @@
-fips_begin_lib(LauncherBase)
-    fips_src(. GROUP_FOLDERS)
-    fips_deps(AzCore Renderer Level Window Network)
-fips_end_lib()
+file(GLOB_RECURSE source_files *.*)
+
+source_group(PREFIX "" FILES ${source_files} TREE ${CMAKE_CURRENT_SOURCE_DIR})
+
+add_library(LauncherBase ${source_files})
