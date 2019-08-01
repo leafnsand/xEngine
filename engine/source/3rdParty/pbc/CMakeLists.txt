@@ -28,6 +28,6 @@ set(source_files
 
 add_library(pbc ${source_files})
 
-if (${CMAKE_CXX_COMPILER_ID} STREQUAL "Clang")
+if (CMAKE_CXX_COMPILER_ID MATCHES "Clang")
     set_target_properties(pbc PROPERTIES COMPILE_FLAGS "-Wno-sign-compare")
 endif()

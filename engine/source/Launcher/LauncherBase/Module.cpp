@@ -10,7 +10,7 @@ DECLARE_MODULE(RendererModule);
 // DECLARE_MODULE(SpineModule);
 DECLARE_MODULE(WindowModule);
 // DECLARE_MODULE(GfxModule);
-DECLARE_MODULE(NetworkModule);
+//DECLARE_MODULE(NetworkModule);
 // DECLARE_MODULE(Particle2dModule);
 // DECLARE_MODULE(Physics2dModule);
 
@@ -24,7 +24,7 @@ void CreateStaticModules(AZStd::vector<AZ::Module*>& modules)
     // modules.push_back(INITIAL_MODULE(SpineModule));
     modules.push_back(INITIAL_MODULE(WindowModule));
     // modules.push_back(INITIAL_MODULE(GfxModule));
-    modules.push_back(INITIAL_MODULE(NetworkModule));
+//    modules.push_back(INITIAL_MODULE(NetworkModule));
     // modules.push_back(INITIAL_MODULE(Particle2dModule));
     // modules.push_back(INITIAL_MODULE(Physics2dModule));
 }

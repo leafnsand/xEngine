@@ -1,18 +1,23 @@
 get_filename_component(ENGINE_ROOT_DIR "." ABSOLUTE)
+get_filename_component(ENGINE_SOURCE_DIR "${ENGINE_ROOT_DIR}/source" ABSOLUTE)
+get_filename_component(ENGINE_SOURCE_3RDPARTY_DIR "${ENGINE_SOURCE_DIR}/3rdParty" ABSOLUTE)
+get_filename_component(ENGINE_SOURCE_AZCORE_DIR "${ENGINE_SOURCE_DIR}/AzCore" ABSOLUTE)
+get_filename_component(ENGINE_SOURCE_LAUNCHER_DIR "${ENGINE_SOURCE_DIR}/Launcher" ABSOLUTE)
+get_filename_component(ENGINE_SOURCE_MODULE_DIR "${ENGINE_SOURCE_DIR}/Module" ABSOLUTE)
 
 include_directories(
-    source
-    source/Module
-    source/3rdParty
-    source/3rdParty/bx/include
-    source/3rdParty/bimg/include
-    source/3rdParty/bgfx/include
+    ${ENGINE_SOURCE_DIR}
+    ${ENGINE_SOURCE_MODULE_DIR}
+    ${ENGINE_SOURCE_3RDPARTY_DIR}
+    ${ENGINE_SOURCE_3RDPARTY_DIR}/bx/include
+    ${ENGINE_SOURCE_3RDPARTY_DIR}/bimg/include
+    ${ENGINE_SOURCE_3RDPARTY_DIR}/bgfx/include
 )
 
-add_subdirectory(source/AzCore)
+add_subdirectory(${ENGINE_SOURCE_3RDPARTY_DIR})
 
-add_subdirectory(source/Launcher)
+add_subdirectory(${ENGINE_SOURCE_AZCORE_DIR})
 
-#add_subdirectory(source/Module)
+add_subdirectory(${ENGINE_SOURCE_LAUNCHER_DIR})
 
-add_subdirectory(source/3rdParty)
+add_subdirectory(${ENGINE_SOURCE_MODULE_DIR})
