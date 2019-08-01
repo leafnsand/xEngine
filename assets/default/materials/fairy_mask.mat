@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Material name="fairy_mask" shader="default/shaders/fairy_mask" queue="FromShader">
+	
+</Material>

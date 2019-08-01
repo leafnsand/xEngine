@@ -1,0 +1,21 @@
+<ObjectStream version="0">
+  <Class name="AZ::Entity" type="{75651658-8663-478D-9090-2432DFCAFA44}">
+    <Class name="AZStd::vector" field="Components" type="{2BADE35A-6F1B-4698-B2BC-3373D010020C}">
+      <Class name="SliceComponent" field="element" type="{AFD304E4-1773-47C8-855A-8B622398934F}">
+        <Class name="AZStd::vector" field="Entities" type="{2BADE35A-6F1B-4698-B2BC-3373D010020C}">
+          <Class name="AZ::Entity" field="element" type="{75651658-8663-478D-9090-2432DFCAFA44}">
+            <Class name="EntityId" field="Id" type="{6383F1D3-BB27-4E6B-A49A-6409B2059EAA}">
+              <Class name="AZ::u64" field="Id" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}" value="1024" />
+            </Class>
+            <Class name="AZStd::string" field="Name" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="Script" />
+            <Class name="AZStd::vector" field="Components" type="{2BADE35A-6F1B-4698-B2BC-3373D010020C}">
+              <Class name="ScriptComponent" field="element" type="{8D1BC97E-C55D-4D34-A460-E63C57CD0D4B}">
+                <Class name="AZStd::string" field="SourceScriptName" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}" value="lua/main.lua" />
+              </Class>
+            </Class>
+          </Class>
+        </Class>
+      </Class>
+    </Class>
+  </Class>
+</ObjectStream>

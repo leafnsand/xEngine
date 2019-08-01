@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Material name="skybox" queue="2000" shader="default/shaders/skybox">
+  <Property name="s_texColor" type="cube" value="white"/>
+</Material>

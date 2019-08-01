@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Material name="spine_screen" shader="default/shaders/spine_screen" queue="FromShader">
+	<Property name="s_texColor" type="2D" value="white"/>
+</Material>

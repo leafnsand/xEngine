@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Material name="Sprites-Default" queue="2000" shader="default/shaders/2d_default">
+  <Property name="s_texColor" type="2d" value="white"/>
+</Material>

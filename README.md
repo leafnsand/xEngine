@@ -1,0 +1,1 @@
+Please open project with CLion or Visual Studio as CMake project.
