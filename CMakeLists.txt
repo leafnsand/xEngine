@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 3.0.0)
 
 project(xEngine)
 
+set(CMAKE_CXX_STANDARD 11)
+
 get_filename_component(ENGINE_ROOT_DIR "." ABSOLUTE)
 get_filename_component(ENGINE_ASSETS_DIR "${ENGINE_ROOT_DIR}/assets" ABSOLUTE)
 get_filename_component(ENGINE_SOURCE_DIR "${ENGINE_ROOT_DIR}/code" ABSOLUTE)

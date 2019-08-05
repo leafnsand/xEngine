@@ -13,7 +13,11 @@ target_include_directories(bgfx PRIVATE
 )
 
 if (CMAKE_CXX_COMPILER_ID MATCHES "MSVC")
-    target_include_directories(bgfx PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/../bx/include/compat/msvc)
+    target_include_directories(bgfx PRIVATE ${ENGINE_SOURCE_3RDPARTY_DIR}/bx/include/compat/msvc)
+endif()
+
+if (APPLE)
+    target_include_directories(bx PRIVATE ${ENGINE_SOURCE_3RDPARTY_DIR}/bx/include/compat/osx)
 endif()
 
 target_compile_definitions(bgfx PRIVATE __STDINT_LIMITS)

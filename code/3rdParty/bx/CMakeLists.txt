@@ -8,6 +8,10 @@ if (CMAKE_CXX_COMPILER_ID MATCHES "MSVC")
     target_include_directories(bx PRIVATE include/compat/msvc)
 endif()
 
+if (APPLE)
+    target_include_directories(bx PRIVATE include/compat/osx)
+endif()
+
 target_compile_definitions(bx PRIVATE __STDINT_LIMITS)
 target_compile_definitions(bx PRIVATE __STDINT_MACROS)
 target_compile_definitions(bx PRIVATE __STDC_LIMIT_MACROS)

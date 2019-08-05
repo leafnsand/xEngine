@@ -5,3 +5,7 @@ add_library(Renderer ${source_files})
 if (CMAKE_CXX_COMPILER_ID MATCHES "MSVC")
     target_include_directories(Renderer PRIVATE ${ENGINE_SOURCE_3RDPARTY_DIR}/bx/include/compat/msvc)
 endif()
+
+if (APPLE)
+    target_include_directories(bx PRIVATE ${ENGINE_SOURCE_3RDPARTY_DIR}/bx/include/compat/osx)
+endif()

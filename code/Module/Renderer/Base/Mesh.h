@@ -70,7 +70,7 @@ namespace Module
             {
                 bgfx::VertexBufferHandle m_vertexHandle = BGFX_INVALID_HANDLE;
                 bgfx::IndexBufferHandle  m_indexHandle  = BGFX_INVALID_HANDLE;
-            } m_static = { BGFX_INVALID_HANDLE, BGFX_INVALID_HANDLE };
+            } m_static;
             struct
             {
                 bgfx::DynamicVertexBufferHandle m_vertexHandle = BGFX_INVALID_HANDLE;
